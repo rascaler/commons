@@ -31,6 +31,11 @@
         <org.hibernate.version>5.3.4.Final</org.hibernate.version>
         <lombok.version>1.16.4</lombok.version>
         <shiro.version>1.2.2</shiro.version>
+        <orika.version>1.4.6</orika.version>
+        <aspectjweaver.version>1.7.3</aspectjweaver.version>
+        <druid.version>0.2.23</druid.version>
+        <fastjson.version>0.2.23</fastjson.version>
+
     </properties>
 
     <dependencyManagement>
@@ -38,18 +43,18 @@
             <dependency>
                 <groupId>ma.glasnost.orika</groupId>
                 <artifactId>orika-core</artifactId>
-                <version>1.4.6</version>
+                <version>${orika.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>org.aspectj</groupId>
                 <artifactId>aspectjweaver</artifactId>
-                <version>1.7.3</version>
+                <version>${aspectjweaver.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>druid</artifactId>
-                <version>0.2.23</version>
+                <version>${druid.version}</version>
             </dependency>
 
             <dependency>
@@ -133,7 +138,7 @@
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>
-                <version>1.2.40</version>
+                <version>${fastjson.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
